@@ -9,7 +9,7 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 03.1 - <a href="">Alcool ou Gasolina?</a>
 <br>
-03.2 - <a href="">Cálculo IMC</a>
+03.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula03.2%20-%20Cálculo%20IMC">Cálculo IMC</a> (18/03/2023)&nbsp&nbsp✔️
 <br>
 03.3 - <a href="">Jogo do Número Aleatório</a>
 <br>
