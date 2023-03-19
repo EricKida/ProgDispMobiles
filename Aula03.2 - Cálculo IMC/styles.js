@@ -29,14 +29,22 @@ const styles = StyleSheet.create({
     height: 210,
     borderRadius: 5,
   },
+  viewInput: {
+    width: '70%',
+    marginTop: 20,
+  },
+  titleInput: {
+    color: '#fff',
+    fontSize: 15,
+    padding: 3,
+    fontWeight: 'bold',
+  },
   input: {
     borderColor: '#DCDCDC', 
     borderWidth: 1,
     borderRadius: 10,
     color: '#fff',
     padding: 8,
-    width: '70%',
-    marginTop: 20,
   },
   button:{
     marginTop: 20,
@@ -49,30 +57,30 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
-  viewResult: {
-    width: 250,
-    alignItems: 'center',
-    backgroundColor: '#1C1C1C',
-    borderRadius: 30,
-    borderWidth: 5,
-    borderColor: '#1C1C1C',
+  resultado: {
     marginTop: 20,
-    height: '1'
+    backgroundColor: '#1C1C1C',
+    borderRadius: 10,
+    padding: 8,
+    width: 220
   },
   titleResult: {
     color: '#fff',
     fontWeight: 'bold',
+    textAlign: 'center',
     fontSize: 18,
     padding: 10,
   },
   textClassification: {
     fontSize: 20,
     fontWeight: 'bold',
+    textAlign: 'center',
   },
   textResult: {
     fontSize: 15,
     fontWeight: 'bold',
     color: '#fff',
+    textAlign: 'center',
     marginBottom: 10,
   },
 })
