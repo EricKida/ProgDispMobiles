@@ -1,4 +1,4 @@
-# Tarefa: Cálculo do IMC
+# Tarefa: Álcool ou Gasolina
 
 Uma página exibindo
   - Uma imagem genérica simbolizando "Combustivel"
