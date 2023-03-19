@@ -11,7 +11,7 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 03.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula03.2%20-%20Cálculo%20IMC">Cálculo IMC</a> (19/03/2023)&nbsp&nbsp✔️
 <br>
-03.3 - <a href="">Jogo do Número Aleatório</a>
+03.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula03.3%20-%20Jogo%20do%20Número%20Aleatório">Jogo do Número Aleatório</a> (19/03/2023)&nbsp&nbsp✔️
 <br>
 04.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.1%20-%20Formulario%20Conta%20Bancaria">Formulário Conta Bancária&nbsp&nbsp❌
 </a>
