@@ -7,7 +7,7 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 02.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula02.2%20-%20Multiplicador">Multiplicador</a> (15/03/2023)&nbsp&nbsp✔️
 <br>
-03.1 - <a href="">Alcool ou Gasolina?</a>
+03.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula03.1%20-%20Álcool%20ou%20Gasolina">Alcool ou Gasolina?</a> (18/03/2023)&nbsp&nbsp✔️
 <br>
 03.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula03.2%20-%20Cálculo%20IMC">Cálculo IMC</a> (18/03/2023)&nbsp&nbsp✔️
 <br>
