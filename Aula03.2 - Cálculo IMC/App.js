@@ -25,7 +25,7 @@ class App extends Component{
     result = this.state.peso / (this.state.altura * this.state.altura)
 
     if(result < 18.5){
-      this.setState({resultado: 'Abaixo do peso'});
+      this.setState({resposta: 'Abaixo do peso'});
       this.setState({imc: 'Nível IMC: ' + Math.round(result)});
       this.setState({colorTxt: '#ffe933'});
     }
@@ -71,26 +71,33 @@ class App extends Component{
         source={require('./img/TabelaIMC.png')}
         />
 
-        <TextInput
-        style={styles.input}
-        placeholder="Insira seu peso"
-        onChangeText={ (valor) => this.setState({peso: valor})}
-        keyboardType="numeric"
-        />
-        <TextInput
-        style={styles.input}
-        placeholder="Insira sua altura"
-        onChangeText={ (valor) => this.setState({altura: valor})}
-        keyboardType="numeric"
-        />
+        <View style={styles.viewInput}>
+          <Text style={styles.titleInput}>Peso</Text>
+          <TextInput
+          style={styles.input}
+          placeholder="Insira seu peso"
+          onChangeText={ (valor) => this.setState({peso: valor})}
+          keyboardType="numeric"
+          />
+        </View>
+        
+        <View style={styles.viewInput}>
+          <Text style={styles.titleInput}>Altura</Text>
+          <TextInput
+          style={styles.input}
+          placeholder="Insira sua altura"
+          onChangeText={ (valor) => this.setState({altura: valor})}
+          keyboardType="numeric"
+          />
+        </View>
 
         <Pressable style={styles.button} onPress={this.calcular}>
           <Text style={styles.text}>Verificar</Text>
         </Pressable>
 
-        <View style={styles.viewResult}>
-          <Text style={styles.titleResult}> Classificação </Text>
-          <Text style={[styles.textClassification, { color: colorFont}]}>{this.state.resultado}</Text>
+        <View style={styles.viewResultado}>
+          <Text style={styles.titleResult}>Classificação</Text>
+          <Text style={[styles.textClassification, { color: colorFont}]}>{this.state.resposta}</Text>
           <Text style={styles.textResult}>{this.state.imc}</Text>
         </View>
 
