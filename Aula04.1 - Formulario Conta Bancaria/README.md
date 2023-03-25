@@ -3,6 +3,7 @@
 Uma página exibindo
   - Inputs (Nome, Idade)
   - Sexo (Picker)
+  - Escolaridade (Picker)
   - Limite na Conta (Slides)
   - Brasileiro (Switch)
   - Botão para confirmação de informações
@@ -10,5 +11,10 @@ Uma página exibindo
 
 <h3>Telas da Tarefa:</h3>
 
+![image](https://user-images.githubusercontent.com/51220926/227723237-e4666f83-dd8d-4c30-8825-28cfea2ef16a.png)
+![image](https://user-images.githubusercontent.com/51220926/227723251-cc204d2c-2ae9-49e5-85a1-d11f832362aa.png)
+![image](https://user-images.githubusercontent.com/51220926/227723259-64e12a8c-1b6b-4bf1-b46f-4ddd818320ea.png)
+
+
 #
-<h3>Tarefa Não Finalizada ❌</h3>
+<h3>Tarefa Finalizada ✅</h3>
