@@ -4,7 +4,7 @@ Uma página exibindo
   - View's com quaisquer produtos
   - ScrollView Horizontal Ativada
 
-Utilizei como complementar o componente 'FlatList' para uma melhor performance e organização da Tarefa.
+Utilizei como componente complementar o 'FlatList', que garante uma melhor performance e organização da Tarefa.
 
 <h3>Telas da Tarefa:</h3>
 
