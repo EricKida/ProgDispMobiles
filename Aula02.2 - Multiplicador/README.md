@@ -9,5 +9,9 @@ Uma página exibindo
 
 ![image](https://user-images.githubusercontent.com/51220926/225476094-ea9eb7fa-fd4a-4a2a-ae12-c7a641c22b40.png)
 
+<h3>Escaneie no ExpoGo</h3>
+
+![image](https://user-images.githubusercontent.com/51220926/227735557-50b2cebd-d2a5-4b5e-b9ca-a24f81367404.png)
+
 #
 <h3>Tarefa Finalizada ✅</h3>
