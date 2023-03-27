@@ -17,3 +17,9 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 04.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.2%20-%20Anúncios%20de%20produtos">Anúncios de Produtos</a> (25/03/2023)&nbsp&nbsp✔️
 </a>
+<br>
+04.2 - Vagas de emprego de TI
+</a>
+<br>
+04.2 - Conversor de Moedas
+</a>
