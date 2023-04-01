@@ -1,46 +1,35 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput, Button, Image, Pressable} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, Image, Pressable } from 'react-native';
 import { styles } from './styles';
 
-class App extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      resposta: '',
-      alcool: 0,
-      gasolina: 0,
-    };
-    
-    this.calcular = this.calcular.bind(this);
+export default function App() {
+  const [alcool, setAlcool] = useState('0');
+  const [gasolina, setGasolina] = useState('0');
+  const [resultado, setResultado] = useState('Insira os Valores');
+
+  function calcular() {
+    if (alcool === '' || gasolina === '') {
+      alert('É necessário digitar os valores!');
+      setResultado('Insira os Valores');
+    } else {
+      conta = alcool / gasolina;
+      if (conta < 0.7) {
+        setResultado('Melhor utilizar Álcool');
+      } else {
+        setResultado('Melhor utilizar Gasolina');
+      }
+    }
   }
 
-  calcular(){
-
-    if ( (this.state.alcool === '') || (this.state.gasolina === '') ){
-      alert('É necessário digitar os valores!')
-      return;
-    }
-
-    res = this.state.alcool / this.state.gasolina
-
-    if(res < 0.7){
-    this.setState({resposta: 'Melhor utilizar Álcool'});
-    }else{
-      this.setState({resposta:  'Melhor utilizar Gasolina'});
-    }
-
-  }
-
-  render(){
-    return(
-      <View style={styles.container}>
-
+  return (
+    <View style={styles.container}>
       <View style={styles.viewTitle}>
         <Text style={styles.titlePage}>Álcool ou Gasolina</Text>
       </View>
 
       <View style={styles.containerImagem}>
-        <Image style={styles.imagem}
+        <Image
+          style={styles.imagem}
           source={require('./img/combustivel.png')}
         />
       </View>
@@ -48,35 +37,31 @@ class App extends Component{
       <View style={styles.viewInput}>
         <Text style={styles.titleInput}>Álcool</Text>
         <TextInput
-        style={styles.input}
-        placeholder="Digite o preço do Álcool"
-        onChangeText={ (valor) => this.setState({alcool: valor})}
-        keyboardType="numeric"
+          style={styles.input}
+          placeholder="Digite o preço do Álcool"
+          onChangeText={(text) => setAlcool(text)}
+          keyboardType="numeric"
         />
       </View>
 
       <View style={styles.viewInput}>
         <Text style={styles.titleInput}>Gasolina</Text>
         <TextInput
-        style={styles.input}
-        placeholder="Digite o preço da gasolina"
-        onChangeText={ (valor) => this.setState({gasolina: valor})}
-        keyboardType="numeric"
+          style={styles.input}
+          placeholder="Digite o preço da gasolina"
+          onChangeText={(text) => setGasolina(text)}
+          keyboardType="numeric"
         />
       </View>
 
-      <Pressable style={styles.button} onPress={this.calcular}>
+      <Pressable style={styles.button} onPress={calcular}>
         <Text style={styles.text}>Verificar</Text>
       </Pressable>
-      
-      <View style={styles.viewResultado}>
-          <Text style={styles.titleResult}>Resultado</Text>
-          <Text style={styles.textResult}>{this.state.resposta}</Text>
-      </View>
-      
-      </View>
-    );
-  }
-}
 
-export default App;
+      <View style={styles.viewResultado}>
+        <Text style={styles.titleResult}>Resultado</Text>
+        <Text style={styles.textResult}>{resultado}</Text>
+      </View>
+    </View>
+  );
+}
