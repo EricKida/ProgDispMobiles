@@ -17,7 +17,7 @@ Uma página exibindo
 
 <h3>Escaneie no ExpoGo</h3>
 
-![image](https://user-images.githubusercontent.com/51220926/227735380-7f2cf1c6-2c5c-4fbb-9426-016097197fda.png)
+![image](https://user-images.githubusercontent.com/51220926/229313479-f1ae866d-b9a3-402e-a21b-430c647dffd4.png)
 
 #
 <h3>Tarefa Finalizada ✅</h3>
