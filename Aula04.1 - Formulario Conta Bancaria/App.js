@@ -1,125 +1,126 @@
-import React, { Component } from 'react';
-import { View, Text, ScrollView, TextInput, Switch, Pressable} from 'react-native';
+import React, { useState } from 'react';
+import {View, Text, ScrollView, TextInput, Switch, Pressable} from 'react-native';
 import { styles } from './styles';
-import {Picker} from '@react-native-picker/picker';
+import { Picker } from '@react-native-picker/picker';
 import Slider from '@react-native-community/slider';
 
-export default class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      nome: '',
-      idade: '',
-      name: '',
-      year: '',
-      sex: 'Masculino',
-      schooling: 'Medio',
-      value: 0,
-      brazil: false
-    };
-    this.confirmar = this.confirmar.bind(this);
-  }
- 
-  confirmar(){
-    if (this.state.name === ''){
-      alert('Opa! Você esqueceu de inserir seu nome.')
-      return;
-    }else if(this.state.year === ''){
-      alert('Opa! Você esqueceu de inserir sua idade.')
-      return;
-    }else if(this.state.year > 120 || this.state.year < 18){
-      alert('Informe sua idade correta!')
-      return;
-    }
-    this.setState({dataTitle: 'Dados Informados'});
-    this.setState({nome: ' '  + this.state.name});
-    this.setState({idade: ' ' + this.state.year + ' anos'});
+export default function App() {
+  const [nome, setNome] = useState('');
+  const [idade, setIdade] = useState('');
+  const [sexo, setSexo] = useState('Masculino');
+  const [escolaridade, setEscolaridade] = useState('Médio');
+  const [limite, setLimite] = useState(0);
+  const [brasileiro, setBrasileiro] = useState(false);
+  
+  const [resultadoNome, setResultadoNome] = useState('');
+  const [resultadoIdade, setResultadoIdade] = useState('');
+  const [resultadoSexo, setResultadoSexo] = useState('');
+  const [resultadoEscolaridade, setResultadoEscolaridade] = useState('');
+  const [resultadoLimite, setResultadoLimite] = useState('');
+  const [resultadoBrasileiro, setResultadoBrasileiro] = useState('');
 
-    this.setState({valor: ' R$' + Math.round(this.state.value) + ',00'});
+  function confirmar() {
+    if(nome != '' && idade != ''){
 
-    if(this.state.brazil == true){
-     this.setState({nacionalidade: ' SIM'})
+      if(idade > 18){
+        setResultadoNome(nome);
+        setResultadoIdade(idade);
+        setResultadoSexo(sexo);
+        setResultadoEscolaridade(escolaridade);
+        setResultadoLimite('R$ ' + (limite) + ',00');
+        if(brasileiro == 1){
+          setResultadoBrasileiro("Sim")
+        }else{
+          setResultadoBrasileiro("Não")
+        }
+
+      }else{
+        alert("Você é menor de idade, não podemos abrir uma conta para você :(");
+      }
+
+    }else if(nome == ''){
+      alert("Você não preencheu o campo 'Nome'")
     }else{
-      this.setState({nacionalidade: ' NÃO'})
+      alert("Você não preencheu o campo 'Idade'")
     }
   }
-
- render(){
 
   return (
     <View style={styles.container}>
       <Text style={styles.titlePage}>Abertura de Conta</Text>
       <ScrollView>
-
         <View style={styles.divInput}>
           <Text style={styles.titleInput}>Nome: </Text>
           <TextInput
             style={styles.inputType1}
             placeholder=" Insira seu nome"
-            onChangeText={ (texto) => this.setState({name: texto})}
+            onChangeText={text => setNome(text)}
             keyboardType="text"
-            />
+          />
         </View>
 
         <View style={styles.divInput}>
-          <Text style={styles.titleInput}>Idade:  </Text>
+          <Text style={styles.titleInput}>Idade: </Text>
           <TextInput
             style={styles.inputType2}
             placeholder=" Insira sua idade"
-            onChangeText={ (texto) => this.setState({year: texto})}
+            onChangeText={text => setIdade(text)}
             keyboardType="numeric"
-            />
+          />
         </View>
 
         <View style={styles.divInput}>
-          <Text style={styles.titleInput}>Sexo:   </Text>
-          <Picker style={styles.inputType2}
-            selectedValue={this.state.sex}
-            onValueChange={ (itemValue, itemIndex) => this.setState({sex: itemValue}) }
-          >
-            <Picker.Item key={1} value='Masculino' label="Masculino" />
-            <Picker.Item key={2} value='Feminino' label="Feminino" />
+          <Text style={styles.titleInput}>Sexo: </Text>
+          <Picker
+            style={styles.inputType2}
+            selectedValue={sexo}
+            onValueChange={(itemValue, itemIndex) => setSexo(itemValue)}
+            >
+            <Picker.Item key={1} value="Masculino" label="Masculino" />
+            <Picker.Item key={2} value="Feminino" label="Feminino" />
           </Picker>
         </View>
 
         <View style={styles.divInput}>
           <Text style={styles.titleInput}>Escolaridade: </Text>
-          <Picker style={styles.inputType2}
-            selectedValue={this.state.schooling}
-            onValueChange={ (itemValue, itemIndex) => this.setState({schooling: itemValue}) }
-          >
-
-            <Picker.Item key={1} value='Médio' label="Médio" />
-            <Picker.Item key={2} value='Graduação' label="Graduação" />
-            <Picker.Item key={3} value='Pós Graduação' label="Pós Graduação" />
-            <Picker.Item key={4} value='MBA' label="MBA" />
+          <Picker
+            style={styles.inputType2}
+            selectedValue={escolaridade}
+            onValueChange={(itemValue, itemIndex) => setEscolaridade(itemValue)}
+            >
+            <Picker.Item key={1} value="Médio" label="Médio" />
+            <Picker.Item key={2} value="Graduação" label="Graduação" />
+            <Picker.Item key={3} value="Pós Graduação" label="Pós Graduação" />
+            <Picker.Item key={4} value="MBA" label="MBA" />
           </Picker>
         </View>
 
         <View style={styles.divInput}>
-          <Text style={styles.titleInput}>Limite:  </Text>
-          <Text style={styles.limitInput}>R$ {this.state.value.toFixed(0)},00</Text>
+          <Text style={styles.titleInput}>Limite: </Text>
+          <Text style={styles.limitInput}>
+            R$ {limite},00
+          </Text>
         </View>
-          <Slider
-            minimumValue={0}
-            maximumValue={200}
-            onValueChange={ (valorSelecionado) => this.setState({value: valorSelecionado})}
-            value={this.state.value}
-            style={styles.sliderInput}
-            step={10}
-          />
+        <Slider
+          minimumValue={0}
+          maximumValue={200}
+          onValueChange={(value) => setLimite(value)}
+          value={limite}
+          style={styles.sliderInput}
+          step={10}
+        />
 
         <View style={styles.divInput}>
-          <Text style={styles.titleInput}>Brasileiro:  </Text>
-          <Switch 
-            value={this.state.brazil}
+          <Text style={styles.titleInput}>Brasileiro: </Text>
+          <Switch
+            value={brasileiro}
             style={styles.switchInput}
-            onValueChange={ (valorSwitch) => this.setState({brazil: valorSwitch})}
+            onValueChange={(value) => setBrasileiro(value)}
           />
         </View>
 
         <View style={styles.viewButton}>
-          <Pressable style={styles.button} onPress={this.confirmar}>
+          <Pressable style={styles.button} onPress={confirmar}>
             <Text style={styles.buttonText}>Confirmar</Text>
           </Pressable>
         </View>
@@ -129,39 +130,35 @@ export default class App extends Component {
 
           <Text style={styles.topic}>
             <Text style={styles.textTopic}>Nome: </Text>
-            <Text style={styles.textData}>{this.state.nome}</Text>
+            <Text style={styles.textData}>{resultadoNome}</Text>
           </Text>
 
           <Text style={styles.topic}>
             <Text style={styles.textTopic}>Idade: </Text>
-            <Text style={styles.textData}>{this.state.idade}</Text>
+            <Text style={styles.textData}>{resultadoIdade}</Text>
           </Text>
 
           <Text style={styles.topic}>
             <Text style={styles.textTopic}>Sexo: </Text>
-            <Text style={styles.textData}>{this.state.sex}</Text>
+            <Text style={styles.textData}>{resultadoSexo}</Text>
           </Text>
 
           <Text style={styles.topic}>
             <Text style={styles.textTopic}>Escolaridade: </Text>
-            <Text style={styles.textData}>{this.state.schooling}</Text>
+            <Text style={styles.textData}>{resultadoEscolaridade}</Text>
           </Text>
 
           <Text style={styles.topic}>
             <Text style={styles.textTopic}>Limite: </Text>
-            <Text style={styles.textData}>{this.state.valor}</Text>
+            <Text style={styles.textData}>{resultadoLimite}</Text>
           </Text>
 
           <Text style={styles.topic}>
             <Text style={styles.textTopic}>Brasileiro: </Text>
-            <Text style={styles.textData}>{this.state.nacionalidade}</Text>
+            <Text style={styles.textData}>{resultadoBrasileiro}</Text>
           </Text>
-
         </View>
       </ScrollView>
     </View>
-   );
- }
+  );
 }
-
-
