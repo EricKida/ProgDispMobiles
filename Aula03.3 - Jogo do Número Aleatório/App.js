@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      numero : '?',
-    };
+export default function App() {
+    const [numero, setNumero] = useState('?');
 
-    this.sortear = this.sortear.bind(this);
-  }
+    function sortear(){
+      setNumero(Math.floor(Math.random() * 10));
+    }
 
-  sortear(){
-
-    sorteado = Math.floor(Math.random() * 10)
-    this.setState({numero: sorteado});
-  }
-
-  render() {
     return (
       <View style={styles.container}>
         <View style={styles.viewTitle}>
@@ -33,16 +23,15 @@ class App extends Component {
         </View>
 
         <View style={styles.viewSorteio}>
-          <Text style={styles.numberSorteio}>{this.state.numero}</Text>
+          <Text style={styles.numberSorteio}>{numero}</Text>
         </View>
 
-        <Pressable style={styles.button} onPress={this.sortear}>
+        <Pressable style={styles.button} onPress={sortear}>
           <Text style={styles.text}>Descobrir</Text>
         </Pressable>
 
       </View>
     );
   }
-}
 
-export default App;
+
