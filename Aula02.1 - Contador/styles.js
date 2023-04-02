@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   count: {
-    marginTop: 35,
+    marginTop: 40,
     color: '#fff',
     textAlign: 'center',
     fontWeight: 'bold',
@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     width: 100,
     height: 50,
     backgroundColor: 'green',
-    marginRight: 15,
     borderRadius: 10
   },
   Inc: {
@@ -45,6 +44,7 @@ const styles = StyleSheet.create({
     height: 50,
     color: '#fff',
     backgroundColor: 'red',
+    marginRight: 15,
     borderRadius: 10
   },
   Dec: {
