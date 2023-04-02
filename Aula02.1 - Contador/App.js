@@ -1,64 +1,36 @@
-import {StyleSheet} from 'react-native';
+import React, { useState } from 'react';
+import { Text, View, TouchableOpacity } from 'react-native';
+import { styles } from './styles';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#121212',
-    padding: 1,
-  },
-  contadorView: {
-    marginTop: 10,
-    alignSelf: 'center',
-    backgroundColor: '#1C1C1C',
-    width: 200,
-    height: 200,
-    borderRadius: 30,
-    borderWidth: 5,
-    borderColor: '#1C1C1C',
-    marginBottom: 20
-  },
-  count: {
-    marginTop: 40,
-    color: '#fff',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 80,
-  },
-  op: {
-    flexDirection: 'row',
-    alignSelf: 'center',
-  },
-  buttonInc: {
-    width: 100,
-    height: 50,
-    backgroundColor: 'green',
-    borderRadius: 10
-  },
-  Inc: {
-    color: '#fff',
-    fontSize: 31,
-    textAlign: 'center'
-  },
-  buttonDec: {
-    width: 100,
-    height: 50,
-    color: '#fff',
-    backgroundColor: 'red',
-    marginRight: 15,
-    borderRadius: 10
-  },
-  Dec: {
-    color: '#fff',
-    fontSize: 31,
-    textAlign: 'center'
-  },
-  titlePage: {
-    color: '#fff',
-    textAlign: 'center',
-    fontSize: 30,
-    fontWeight: 'bold',
-    padding: 40,
-  },
-});
+export default function App(){
+  const [count, setCount] = useState(0)
 
-export {styles};
+  function decrementCount() {
+    if(count <= 0){
+      alert('Não é possível decrementar valores menores que 0')
+    }else{
+    setCount(count - 1)
+    }
+  }
+
+  function incrementCount() {
+    setCount(count + 1)
+  }
+
+  return (
+      <View style={styles.container}>
+        <Text style={styles.titlePage}>Contador</Text>
+        <View style={styles.contadorView}>
+          <Text style={styles.count}>{count}</Text>
+        </View>
+        <View style={styles.op}>
+          <TouchableOpacity onPress={decrementCount} style={styles.buttonDec}>
+            <Text style={styles.Dec}>-</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={incrementCount} style={styles.buttonInc}>
+            <Text style={styles.Inc}>+</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    );
+}
