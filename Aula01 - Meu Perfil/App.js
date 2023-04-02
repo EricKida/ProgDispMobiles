@@ -23,9 +23,9 @@ export default function App() {
   }
 
   // Redirecionamento do Botão/GitHub
-  handlePress = () => {
+  function handlePress(){
     Linking.openURL('https://github.com/EricKida');
-  };
+  }
 
   return (
     <View style={styles.container}>
@@ -38,7 +38,7 @@ export default function App() {
           <Text style={styles.textInfs}>{idade} anos</Text>
           <View style={styles.btnGitHub}>
             <Image source={{ uri: imgGitHub }} style={styles.imgGitHub} />
-            <Text onPress={this.handlePress} style={styles.textInfsGithub}>GitHub</Text>
+            <Text onPress={handlePress} style={styles.textInfsGithub}>GitHub</Text>
           </View>  
         </View>
 
@@ -64,5 +64,3 @@ export default function App() {
     </View>
   );
 }
-
-
