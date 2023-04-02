@@ -4,7 +4,11 @@ Uma página exibindo
   - View's com quaisquer produtos
   - ScrollView Horizontal Ativada
 
+Com Classes:
 Utilizei como componente complementar o 'FlatList', que garante uma melhor performance e organização da Tarefa.
+
+Com Funções:
+Organizei todos os itens em diferentes Views.
 
 <h3>Telas da Tarefa:</h3>
 
