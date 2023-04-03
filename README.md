@@ -16,10 +16,8 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 04.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.1%20-%20Formulario%20Conta%20Bancaria">Formulário Conta Bancária</a> (25/03/2023)&nbsp&nbsp✔️
 <br>
 04.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.2%20-%20Anúncios%20de%20produtos">Anúncios de Produtos</a> (25/03/2023)&nbsp&nbsp✔️
-</a>
 <br>
-04.3 - Vagas de emprego de TI
-</a>
+04.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.3%20-%20Vagas%20de%20emprego%20de%20TI">Vagas de emprego de TI</a> (02/04/2023) &nbsp&nbsp✔️
 <br>
 04.4 - Conversor de Moedas
-</a>
+
