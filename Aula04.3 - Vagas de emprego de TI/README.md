@@ -2,7 +2,7 @@
 
 Uma página exibindo
   - View's com quaisquer produtos
-  - ScrollView Horizontal Ativada
+  - ScrollView Vertical Ativada
 
 Utilizei como complementar o componente 'FlatList' para uma melhor performance e organização da Tarefa.
 
