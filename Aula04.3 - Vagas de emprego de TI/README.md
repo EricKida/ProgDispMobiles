@@ -1,7 +1,7 @@
 # Tarefa: Anúncios para venda de produtos
 
 Uma página exibindo
-  - View's com quaisquer produtos
+  - View's com quaisquer tipos de Vagas na área de T.I.
   - ScrollView Vertical Ativada
 
 Utilizei como complementar o componente 'FlatList' para uma melhor performance e organização da Tarefa.
