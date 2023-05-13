@@ -1,11 +1,20 @@
-# Sample Snack app
+# Tarefa: Formulário Conta Bancária Remaster
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Esta tarefa já foi realizada anteriormente (<a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.1%20-%20Formulario%20Conta%20Bancaria">Tarefa04.1</a>). Agora passamos por algumas atualizações, como:
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo-cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+  - Utilização de Icones (FontAwesome)
+  - Navegação utilizando 'Stack Navigator'
+  - Uma página de Formulário e outra de Exibição das Informações
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+<h3>Telas da Tarefa:</h3>
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/d391ce16-0708-4114-b561-5a3a82989075)
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/c5ad162d-61ae-4671-9a22-f4c697d0eb37)
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+
+<h3>Escaneie no ExpoGo</h3>
+
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/d63ca238-fa23-42d6-85c0-875054c73902)
+
+#
+<h3>Tarefa Finalizada ✅</h3>
