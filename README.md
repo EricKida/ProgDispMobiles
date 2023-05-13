@@ -22,5 +22,9 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 04.4 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula04.4%20-%20Conversor%20de%20Moedas">Conversor de Moedas</a> (07/04/2023) &nbsp&nbsp✔️
 <br>
 05.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula05.1%20-%20Formulário%20Conta%20Bancária%20Remaster">Formulário Conta Bancária Remaster</a> (13/05/2023) &nbsp&nbsp✔️
-
-
+<br>
+05.2 - <a href="">Meu Perfil com MaterialTopTabNavigator</a> &nbsp&nbsp❌
+<br>
+05.3 - <a href="">Meu Perfil com TabNavigator</a> &nbsp&nbsp❌
+<br>
+06.1 - <a href=""> Visualização de Frase com ASYNC</a> &nbsp&nbsp❌
