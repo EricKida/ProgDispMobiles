@@ -23,7 +23,7 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 05.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula05.1%20-%20Formulário%20Conta%20Bancária%20Remaster">Formulário Conta Bancária Remaster</a> (13/05/2023) &nbsp&nbsp✔️
 <br>
-05.2 - <a href="">Meu Perfil com MaterialTopTabNavigator</a> &nbsp&nbsp❌
+05.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula05.2%20-%20Meu%20Perfil%20Remaster%201.0">Meu Perfil com MaterialTopTabNavigator</a> (13/05/2023) &nbsp&nbsp✔️
 <br>
 05.3 - <a href="">Meu Perfil com TabNavigator</a> &nbsp&nbsp❌
 <br>
