@@ -27,4 +27,4 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 05.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula05.3%20-%20Meu%20Perfil%20Remaster%202.0">Meu Perfil com TabNavigator</a> (14/05/23) &nbsp&nbsp✔️
 <br>
-06.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.1%20-%20Visualizacao%20de%20Frase%20com%20ASYNC"> Visualização de Frase com ASYNC</a> &nbsp&nbsp⏳️
+06.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.1%20-%20Visualizacao%20de%20Frase%20com%20ASYNC"> Visualização de Frase com ASYNC</a> (15/05/23)&nbsp&nbsp⏳️
