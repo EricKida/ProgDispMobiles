@@ -21,6 +21,9 @@ export default function Home() {
     <ScrollView style={styles.container}>
 
       <View style={styles.divItem}>
+      </View>
+      
+      <View style={styles.divItem}>
         <View style={styles.divIconItem}>
           <FontAwesome name="graduation-cap" size={20} color="#c1c1c1" />
         </View>
