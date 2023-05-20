@@ -6,15 +6,15 @@ Uma página exibindo
 
 <h3>Telas da Tarefa:</h3>
 
-![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/08756bdf-01a3-407c-98ef-4ec3cbf14992)
-![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/082af82f-0dfe-4abc-bf97-ff10270e3b5c)
-![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/ec1711ed-4272-42b7-8d22-25ff514c2e90)
-![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/512db7b1-719a-41d6-897c-26de8a9ea8fc)
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/79d4bc68-0be8-43c9-a013-9c245f69f6f2)
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/4aa12abc-908a-44be-9f8d-1be45e2b55d1)
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/91b950e3-8ad7-4e96-adcb-e7eaa2ebbcf3)
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/b144b281-dc1e-4f75-b7b4-3619dda4df68)
 
 <h3>Escaneie no ExpoGo</h3>
 
-![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/0d65d45b-7029-4b28-99ab-92ee684ab2f3)
+![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/54566dc9-a09b-40dc-8a15-b967d96855fa)
 
 #
-<h3>Tarefa em Andamento ⏳️</h3>
+<h3>Tarefa em Andamento ✔️</h3>
 
