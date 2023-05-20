@@ -3,46 +3,54 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
   },
-  divTitlePage: {
-    alignItems: 'center',
-    padding: 5,
-    flexDirection: 'row',
+  titleText: {
     marginTop: 30,
-    width: '100%',
-    borderRadius: 10,
+    fontSize: 20,
+    fontWeight: 'bold',
+    padding: 15,
   },
-  divSwitchs: {
+  areaOp: {
+    flexDirection: 'row',
+  },
+  op: {
     flexDirection: 'row',
     borderRadius: 10,
     borderWidth: 0.3,
     borderColor: 'black',
     padding: 5,
-    width: '49%',
-    marginLeft: '0%',
-    marginRight: '1.5%',
+    width: '47%',
+    marginLeft: '2%',
+    justifyContent: 'center',
   },
-  textSwitchs: {
+  opTitle: {
     fontSize: 18,
-    marginTop: 12,
+    marginTop: 11,
   },
-  divSupSwitchs: {
-    flexDirection: 'row',
-    marginBottom: 4,
-  },
-  textTitlePage: {
-    fontSize: 18,
-    fontWeight: '600',
-    marginLeft: 2,
-  },
-  divFrase: {
-    width: '100%',
+  areaFrase: {
+    marginTop: 10,
+    width: '95%',
+    marginLeft: '2.5%',
     height: 200,
     padding: 10,
     borderRadius: 10,
     borderWidth: 0.3,
     borderColor: 'black',
+    backgroundColor: '#121212'
+  },
+  "bg-light": {
+    backgroundColor: '#fff',
+  },
+  "text-dark": {
+    color: 'black',
+  },
+  textFrase: {
+    fontSize: 22,
+    paddingHorizontal: 20,
+    color: '#fff',
+  },
+  small: {
+    fontSize: 14,
   },
 });
 
