@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, ScrollView, Switch, Keyboard, AsyncStorage } from 'react-native';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect, useState } from "react";
+import { StatusBar, StyleSheet, Switch, Text, View } from 'react-native';[]
 import { styles } from './styles';
 
 export default function App() {
@@ -7,84 +8,56 @@ export default function App() {
   const [size, setSize] = useState(false);
 
   useEffect(() => {
-    const recuperarBg = async () => {
-      const bgColor = await AsyncStorage.getItem('bg');
-      setBg(bgColor === 'true');
-    };
-
-    const recuperarSize = async () => {
-      const valueSize = await AsyncStorage.getItem('size');
-      setSize(valueSize === 'true');
-    };
-
-    recuperarBg();
-    recuperarSize();
+    getData();
+    //alert('Abriu o App');
   }, []);
 
-  const trocaCor = async () => {
-    setBg(!bg);
-    Keyboard.dismiss();
-    await AsyncStorage.setItem('bg', (!bg).toString());
-  };
+  useEffect(() => {
+    //alert('Alterou os valores');
+    setData();
+  }, [bg, size]);
 
-  const trocaTamanho = async () => {
-    setSize(!size);
-    Keyboard.dismiss();
-    await AsyncStorage.setItem('size', (!size).toString());
-  };
+  async function setData() {
+    await AsyncStorage.setItem('bg', String(bg));
+    await AsyncStorage.setItem('size', String(size));
+  }
 
-  const bgColors = {
-    false: '#fff',
-    true: '#121212',
-  };
+  async function getData() {
+    const bg = await AsyncStorage.getItem('bg');
+    const size = await AsyncStorage.getItem('size');
 
-  const textColors = {
-    false: 'black',
-    true: '#fff',
-  };
-
-  const textSizes = {
-    false: 16,
-    true: 25,
-  };
+    setBg(bg === 'true' && true);
+    setSize(size === 'true' && true);
+  }
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.divTitlePage}>
-        <Text style={styles.textTitlePage}>Frases</Text>
+    <View style={styles.container}>
+      <View style={styles.titlePage}>
+        <Text style={styles.titleText}>Frases</Text>
       </View>
 
-      <View style={styles.divSupSwitchs}>
-        <View style={styles.divSwitchs}>
-          <Text style={styles.textSwitchs}>Dia</Text>
-          <Switch
-            trackColor={{ false: 'lightgray', true: 'gray' }}
-            thumbColor={bg ? 'white' : 'gray'}
-            value={bg}
-            style={styles.switchInput}
-            onValueChange={trocaCor}
-          />
+      <View style={styles.areaOp}>
+
+        <View style={styles.op}>
+          <Text style={styles.opTitle}>Dia</Text>
+          <Switch style={styles.opSwitch}
+            value={bg} onValueChange={(valor) => setBg(valor)} />
         </View>
-        <View style={styles.divSwitchs}>
-          <Text style={styles.textSwitchs}>Pequeno</Text>
-          <Switch
-            trackColor={{ false: 'lightgray', true: 'gray' }}
-            thumbColor={size ? 'white' : 'gray'}
-            value={size}
-            style={styles.switchInput}
-            onValueChange={(valorSwitch) => {
-              setSize(valorSwitch);
-              AsyncStorage.setItem('size', valorSwitch.toString());
-            }}
-          />
+
+        <View style={styles.op}>
+          <Text style={styles.opTitle}>Pequeno</Text>
+          <Switch style={styles.opSwitch}
+            value={size} onValueChange={(valor) => setSize(valor)} />
         </View>
+
       </View>
 
-      <View style={[styles.divFrase, { backgroundColor: bg ? bgColors.true : bgColors.false }]}>
-        <Text style={[styles.textFrase, { color: bg ? textColors.true : textColors.false, fontSize: size ? textSizes.true : textSizes.false }]}>
-          "A vingança nunca é plena, mata a alma e envenena" (Seu Madruga)
-        </Text>
-      </View>
-    </ScrollView>
+        <View style={[styles.areaFrase, bg && styles["bg-light"]]}>
+          <Text style={[styles.textFrase, bg && styles["text-dark"], size && styles.small]}>
+            "A vingança nunca é plena, mata a alma e envenena"{'\n'}{'\n'}(Seu Madruga)
+          </Text>
+        </View>
+      
+    </View>
   );
 }
