@@ -16,5 +16,5 @@ Uma página exibindo
 ![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/54566dc9-a09b-40dc-8a15-b967d96855fa)
 
 #
-<h3>Tarefa em Andamento ✔️</h3>
+<h3>Tarefa em Concluída ✔️</h3>
 
