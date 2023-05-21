@@ -4,6 +4,10 @@ Uma página exibindo
   - Um botão para a inserção da tarefa na lista
   - A lista de compras em si, exibindo o nome do produto e a sua quantidade
 
+Também foram adicionados
+  - Botão para aumentar ou diminuir a quantidade de itens
+  - Alerts para tentativa de diminuição abaixo de 1
+
 <h3>Telas da Tarefa:</h3>
 
 ![image](https://github.com/EricKida/ProgDispMobiles/assets/51220926/7ccbbbd7-3228-413a-bb66-a08ea9813a04)
