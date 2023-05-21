@@ -31,4 +31,10 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 06.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.2%20-%20Lista%20de%20Tarefas">Lista de Tarefas</a> (20/05/23)&nbsp&nbsp✔️
 <br>
-06.3 - <a href="">Lista de Compras</a>&nbsp&nbsp❌ 
+06.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.3%20-%20Lista%20de%20Compras">Lista de Compras</a> (21/05/23)&nbsp&nbsp✔️
+
+
+
+
+
+
