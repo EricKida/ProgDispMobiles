@@ -29,6 +29,6 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 06.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.1%20-%20Visualizacao%20de%20Frase%20com%20ASYNC">Visualização de Frase com ASYNC</a> (20/05/23)&nbsp&nbsp✔️
 <br>
-06.3 - <a href="">Lista de Tarefas</a>&nbsp&nbsp❌ 
+06.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.2%20-%20Lista%20de%20Tarefas">Lista de Tarefas</a> (20/05/23)&nbsp&nbsp✔️
 <br>
 06.3 - <a href="">Lista de Compras</a>&nbsp&nbsp❌ 
