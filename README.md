@@ -32,9 +32,12 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 06.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.2%20-%20Lista%20de%20Tarefas">Lista de Tarefas</a> (20/05/23)&nbsp&nbsp✔️
 <br>
 06.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula06.3%20-%20Lista%20de%20Compras">Lista de Compras</a> (21/05/23)&nbsp&nbsp✔️
-
-
-
-
-
+<br>
+07.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula07.1%20-%20Consultar%20CEP%20com%20API">Consultar CEP com API</a> (04/06/23)&nbsp&nbsp✔️
+<br>
+07.2 - <a href="">Perfil de Devs com API</a> &nbsp&nbsp⌛ 
+<br>
+07.3 - <a href="">Buscar Filmes com API</a> &nbsp&nbsp⌛ 
+<br>
+Projeto Final - <a href="">?</a> &nbsp&nbsp⌛
 
