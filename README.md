@@ -35,7 +35,7 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 07.1 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula07.1%20-%20Consultar%20CEP%20com%20API">Consultar CEP com API</a> (04/06/23)&nbsp&nbsp✔️
 <br>
-07.2 - <a href="">Perfil de Devs com API</a> &nbsp&nbsp⌛ 
+07.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula07.2%20-%20Perfil%20dos%20Devs">Perfil dos Devs</a> (08/06/23)&nbsp&nbsp✔️ 
 <br>
 07.3 - <a href="">Buscar Filmes com API</a> &nbsp&nbsp⌛ 
 <br>
