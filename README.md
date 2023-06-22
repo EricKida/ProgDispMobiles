@@ -37,4 +37,4 @@ Repositório onde serão colocados todos as tarefas/projetos que serão feitos o
 <br>
 07.2 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula07.2%20-%20Perfil%20dos%20Devs">Perfil dos Devs</a> (08/06/23)&nbsp&nbsp✔️ 
 <br>
-07.3 - <a href="">Buscar Filmes com API</a> &nbsp&nbsp⌛ 
+07.3 - <a href="https://github.com/EricKida/ProgDispMobiles/tree/main/Aula07.3%20-%20CineDanger">Buscar Filmes com API</a> (22/06/23)&nbsp&nbsp✔️ 
